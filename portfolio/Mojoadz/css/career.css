@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Brawler:wght@400;700&family=Cabin:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700&family=Gloria+Hallelujah&family=Itim&family=Jacques+Francois&family=Kanit:wght@400;500;700;800;900&family=Marko+One&family=Martel+Sans&family=Montserrat&family=Nunito:wght@200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Parisienne&family=Poly&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Puppies+Play&family=Raleway&family=Risque&family=Rosarivo&family=Rubik:wght@300;400;500;600;700;800&family=Slabo+13px&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.mojo {
+    background: linear-gradient(90deg, #FF60A87A -200%, white 50%, #FF60A87A 250%);
+}
+/* -------------------------Career Banner--------------------- */
+.career-banner {
+    width: 100%;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: poppins;
+    padding: 20px 4%;
+    gap: 10px 0;
+    background: linear-gradient(90deg, #FF60A87A -200%, white 50%, #FF60A87A 250%);
+}
+.career-banner h1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 35px;
+    color: #FF3672;
+    width: 70%;
+    text-align: center;
+}
+.career-banner p {
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+}
+.career-nav {
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #E0E0E0;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.career-link {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .7s;
+}
+.career-link a {
+    width: 100%;
+    padding: 20px 0;
+    font-weight: 600;
+    color: #455A64;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+/* .career-nav .career-link:nth-child(2) {
+    background: linear-gradient(to right,#CBDFEB,#EFDBEB);
+} */
+.career-link:hover {
+    background: linear-gradient(to right,#CBDFEB,#EFDBEB);
+}
+/* ----------------------------Career Image-------------------------- */
+.career-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.career-image img {
+    width: 70%;
+}
+/* --------------------------------Career Benefit---------------------------- */
+
+.career-benefit {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    padding: 20px 4%;
+    font-family: poppins;
+    border: 1px solid white;
+    box-shadow: 0 0 5px #ccc;
+    margin-bottom: 20px;
+    background: white;
+}
+.benefit-left {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.benefit-left h1 {
+    font-family: poly;
+}
+.benefit-right {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ben1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0 30px;
+    margin: 15px 0 20px 0
+}
+.ben-box{
+    width: 45%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap:20px 30px;
+    align-items: start;
+    justify-content: center;
+}
+.ben-box h2{
+    font-size: 15px;
+    font-family: poly;
+}
+.ben-box p {
+    font-size: 13px;
+}
+.ben-box-img {
+    border-radius: 10px;
+    width: 20%;
+    height:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ben-box-img img {
+    width: 50%;
+}
+/* --------------------------Internship------------------------------- */
+.internship-cell {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 4%;
+    font-family: poppins;
+    background: linear-gradient(90deg, #FF60A87A -200%, white 50%, #FF60A87A 250%);
+}
+.intern-left {
+    width: 50%;
+}
+.intern-left img {
+    width: 100%;
+}
+.intern-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px 0;
+}
+.intern {
+    width: 40%;
+    border-radius: 15px;
+    padding: 15px 0;
+    background: #FF80A6;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.intern-list {
+    font-size: 15px;
+}
+.intern-btn button {
+    width: 120px;
+}
+
+/* -----------------------------Media Query ------------------------------- */
+
+@media(max-width:1070px){
+    .career-banner h1 {
+        width: 90%;
+    }
+}
+@media(max-width:850px){
+    .career-banner h1 {
+        width: 100%;
+        font-size: 30px;
+    }
+    .career-nav {
+        width: 100%;
+    }
+    .career-link a {
+        font-size: 17px;
+    }
+    .benefit-right {
+        width: 95%;
+    }
+    .ben-box{
+        width: 48%;
+    }
+    .intern {
+        width: 60%;
+    }
+}
+@media(max-width:650px){
+    .career-link a {
+        font-size: 15px;
+    }
+    .ben-box-img {
+        width: 35%;
+    }
+    .internship-cell {
+        flex-direction: column;
+        gap:30px 0
+    }
+    .intern-left,
+    .intern-right {
+        width: 100%;
+    }
+}
+@media(max-width:550px){
+    .benefit-left {
+        width: 100%;
+    }
+    .career-benefit {
+        width: 90%;
+    }
+    .career-banner h1 {
+        font-size: 23px;
+    }
+    .career-nav {
+        flex-direction: column;
+    }
+    .career-link {
+        width: 100%;
+    }
+    .ben1 {
+        flex-direction: column;
+        gap:25px 0;
+    }
+    .ben-box {
+        width: 100%;
+    }
+    .ben-box-img {
+        width: 30%;
+    }
+    .career-image img {
+        width: 90%;
+    }
+}

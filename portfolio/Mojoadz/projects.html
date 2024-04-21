@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link type="image/x-icon" rel="icon" href="images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="css/achieve.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Mojoadz</title>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-58N2HLHJ');
+    </script>
+    <script>
+        $(document).ready(function() {
+            var progressPath = document.querySelector('.progress-wrap path');
+            var pathLength = progressPath.getTotalLength();
+
+            progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+            progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+            progressPath.style.strokeDashoffset = pathLength;
+            progressPath.getBoundingClientRect();
+            progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+
+            var updateProgress = function() {
+                var scroll = $(window).scrollTop();
+                var height = $(document).height() - $(window).height();
+                var progress = pathLength - (scroll * pathLength / height);
+                progressPath.style.strokeDashoffset = progress;
+            }
+
+            updateProgress();
+            $(window).scroll(updateProgress);
+
+            var offset = 50;
+            var duration = 550;
+
+            jQuery(window).on('scroll', function() {
+                if(jQuery(this).scrollTop() > offset) {
+                    jQuery('.progress-wrap').addClass('active-progress');
+                } else {
+                    jQuery('.progress-wrap').removeClass('active-progress');
+                }
+            });
+
+            jQuery('.progress-wrap').on('click', function(event) {
+                event.preventDefault();
+                jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+            })
+        });
+    </script>
+</head>
+<body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58N2HLHJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Mojo-Start -->
+    <div class="mojo">
+        <!-- Mojo-header-Start -->
+        <div class="mojo-header">
+            <a href="index.html" class="logo-content"><div class="logo-content">
+                <img src="images/mojo-logo.png">
+                <div class="log-name">
+                    <p>Mojo <span>Adz</span></p>
+                </div>
+            </div>
+            </a>
+            <div class="menu" id="navlinks">
+                <ul>
+                    <li class="close" onclick="hide();">
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li class="serve-menu">
+                        <a href="#">Services
+                            <ul class="service">
+                                <li><a href="SEO-services.html" target="_blank">SEO Optimisation</a></li>
+                                <li><a href="pay-per-click-services.html" target="_blank">PPC Management</a></li>
+                                <li><a href="social-marketing-services.html" target="_blank">Social Marketing</a></li>
+                                <li><a href="social-media-management.html" target="_blank">Social Media Management</a></li>
+                                <li><a href="email-marketing-services.html" target="_blank">Email Marketing</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="career.html">Career</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><button class="getbtn">Get in Touch</button></a>
+                    </li>
+                </ul>
+            </div>
+            <span class="menu-icon" onclick="show();"><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <!-- -------------------------Banner------------------------------------------- -->
+        <div class="achieve-banner">
+            <img src="images/Rectangle 1450.webp" alt="mojoadz-achievement">
+        </div>
+        <!-- ---------------------------------------Gallery---------------------------------------- -->
+        <div class="gallery">
+            <div class="left-gal">
+                <div class="work-box">
+                    <h1>147+</h1>
+                    <p>Completed Projects</p>
+                </div>
+                <div class="work-box" style="background: #91d8dd;">
+                    <h1>25+</h1>
+                    <p>Completed Projects</p>
+                </div>
+            </div>
+            <div class="gallo">
+                <div class="right-gal">
+                    <div class="gal-box">
+                        <h3>Our Gallery of Our Success Stories, where ideas transformed into brands.</h3>
+                        <div class="gal1">
+                            <div class="gal1-left">
+                                <img src="images/gal1.png" alt="mojoadz-achievement-madurai">
+                            </div>
+                            <div class="gal1-right">
+                                <p>Strategic Triumphs:</p>
+                                <p>Quisque condimentum erat ac orci blandit, in sollicitudin tellus vestibulum</p>
+                            </div>
+                        </div>
+                        <div class="gal1">
+                            <div class="gal1-left">
+                                <img src="images/gal2.png" alt="mojoadz-achievement-madurai">
+                            </div>
+                            <div class="gal1-right">
+                                <p>Creative Conquests</p>
+                                <p>Nullam commodo tincidunt nisl, nec vehicula dui interdum nec</p>
+                            </div>
+                        </div>
+                        <div class="gal1">
+                            <div class="gal1-left">
+                                <img src="images/gal3.png" alt="mojoadz-achievement">
+                            </div>
+                            <div class="gal1-right">
+                                <p>Innovative Impact</p>
+                                <p>Sed vitae aliquet ipsum, ut ornare lectus. Proin sed sem risus. Sed nunc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------------Our Achievements------------------------------ -->
+        <div class="our-achieve">
+            <div class="ach-part1">
+                <p>Our achievements</p>
+                <h3>Our Client growth Speaks Our Success Story</h3>
+                <p>Fusce id hendrerit lectus. Morbi vitae tortor sed turpis feugiat congue</p>
+                <p>Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus rutrum leo consectetur accumsan. Vivamus viverra ante turpis, dignissim condimentum elit egestas sit amet. Phasellus faucibus pellentesque</p>
+            </div>
+            <div class="ach-part2">
+                <div class="ach-img">
+                    <img src="images/Business support-amico 1.png" alt="mojoadz-achievement">
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------Company Curosal--------------------------------------- -->
+        <div class="company">
+            <div class="comp-slide">
+                <div class="slide">
+                    <h3>Aadhithyan Residency</h3>
+                    <h3>Vetri Eye Care Hospital</h3>
+                    <h3>Subithra Jewellery</h3>
+                    <h3>Harish Restaurants</h3>
+                </div>
+                <div class="slide">
+                    <h3>Aadhithyan Residency</h3>
+                    <h3>Vetri Eye Care Hospital</h3>
+                    <h3>Subithra Jewellery</h3>
+                    <h3>Harish Restaurants</h3>
+                </div>
+                <div class="slide">
+                    <h3>Aadhithyan Residency</h3>
+                    <h3>Vetri Eye Care Hospital</h3>
+                    <h3>Subithra Jewellery</h3>
+                    <h3>Harish Restaurants</h3>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------------------Project Achievment-------------------------------- -->
+        <div class="pro-achieve">
+            <div class="pro-head">
+                <p>Our Works</p>
+                <h2>Our Project Achievements</h2>
+            </div>
+            <div class="comp">
+                <div class="comp-box">
+                    <img src="images/Rectangle 1444.png" alt="mojoadz-achievement">
+                    <h4>Aadhithyan Residency</h4>
+                    <p>Transforming Aadhithyan Residency's online presence, Mojo Adz orchestrated a strategic digital campaign that resulted in a 30% increase in online bookings.</p>
+                </div>
+                <div class="comp-box">
+                    <img src="images/Rectangle 1446.png" alt="mojoadz-achievement">
+                    <h4>Vetri Eye Care Hospital</h4>
+                    <p>In collaboration with Mojo Adz, Vetri Eye Care Hospital witnessed a paradigm shift in its digital outreach.  Experienced a 50% surge in appointment requests.</p>
+                </div>
+            </div>
+            <div class="comp">
+                <div class="comp-box">
+                    <img src="images/Rectangle 1447.png" alt="mojoadz-achievement-madurai">
+                    <h4>Subithra Jewellery</h4>
+                    <p>Through visually stunning campaigns and strategic social media engagement, Subitra Jewellers experienced a remarkable 40% growth in online sales, solidifying its position in the digital realm.</p>
+                </div>
+                <div class="comp-box">
+                    <img src="images/Rectangle 1448.png" alt="mojoadz-achievement-madurai">
+                    <h4>Harish Restaurants</h4>
+                    <p>Implementing a tailored marketing strategy, the restaurant chain witnessed a 25% increase in online orders. The culinary expertise and unique dining experiences, fostering a vibrant online community.</p>
+                </div>
+            </div>
+        </div>
+        <!-- --------------------------------Brand Potential------------------------------------- -->
+        <div class="brand">
+            <div class="left-brand">
+                <h3>Unleash Your Brand Potential</h3>
+                <div class="brand-img">
+                    <img src="images/image 17.png">
+                </div>
+            </div>
+            <div class="right-brand">
+                <p>Accelerate your company's growth with our Data-Driven Marketing Solutions solution.</p>
+                <p>Our services give companies the resources and strategies they need to effectively Drive Brand Engagement and Generate Results</p>
+                <div class="percentage">
+                    <div class="percent-box">
+                        <h2>35%</h2>
+                        <p>More</p>
+                        <p>efficient</p>
+                    </div>
+                    <div class="percent-box">
+                        <h2>40%</h2>
+                        <p>Cost</p>
+                        <p>savings</p>
+                    </div>
+                    <div class="percent-box">
+                        <h2>93%</h2>
+                        <p>Client</p>
+                        <p>satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mojo-Footer-Start -->
+        <div class="mojo-footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <a href="index.html" class="logo-content"><div class="logo-content flogo">
+                <img src="images/mojo-logo.png">
+                <div class="log-name log">
+                    <p>Mojo <br><span style="color: white;">Adz</span></p>
+                </div>
+            </div></a>
+            <div class="mojo-info">
+                <h3>Information</h3>
+                <ul>
+                    <li>
+                        <a href="#">Achievements</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">Certifications</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mojo-fc">
+                <h3>More Details</h3>
+                <div class="adrs">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <span>No 419, 1st Floor, LIG Colony Rd, New LIG Colony, Anna Nagar, Madurai, Tamil Nadu 625020</span>
+                </div>
+                <div class="adrs">
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    <span>(+91)7272911100</span>
+                </div>
+                <div class="adrs">
+                    <span><i class="fa-solid fa-square-envelope"></i></span>
+                    <span>info@redotsolutions.com</span>
+                </div>
+            </div>
+            <div class="mojo-social">
+                <h3>Social Media</h3>
+                <div class="media-icons">
+                    <span class="insta"><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                    <span class="twitter"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></span>
+                    <span class="linkedin"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></span>
+                    <span class="facebook"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
+                    <span class="youtube"><a href="#"><i class="fa-brands fa-youtube"></i></a></span>
+                </div>
+                <div class="our-brands">
+                    <h3>Our Brands</h3>
+                    <a href="https://redotsolutions.com/">Redot Solutions</a>
+                    <a href="https://redotacademy.com/">Redot academy</a>
+                    <a href="#">Redot consultancy</a>
+                    <a href="https://infiniticz.com/">Infiniticz</a>
+                </div>
+            </div>
+        </div>
+        <!-- Mojo-Footer-End -->
+    </div>
+    <!-- Mojo-End -->
+    <script>
+        var links = document.getElementById("navlinks");
+        function show(){
+            links.style.right = "0px";
+        }
+        function hide(){
+            links.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

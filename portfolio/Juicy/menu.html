@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Juicy</title>
+</head>
+<body>
+    <div class="juicy-container">
+        <!-- -----------------------Juicy-Header-------------------------- -->
+        <div class="juicy-header">
+            <div class="juicy-logo">
+                <a href="index.html"><img src="images/juicy-logo.png" alt="Juicy-Logo"><span>Juicy</span></a>
+            </div>
+            <div class="juicy-menu">
+                <ul class="menu" id="navlinks">
+                    <li class="close" onclick="hide();">
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html" style="color: #ff9d0a;">Menu</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <span class="menu-icon" onclick="show();"><i class="fa-solid fa-bars"></i></span>
+            </div>
+        </div>
+        <!-- ----------------------------Juicy-Menu-Banner----------------------------- -->
+        <div class="juicy-menu-part">
+            <div class="menu-part">
+                <div class="menu-part-img">
+                    <div class="fruit-img">
+                        <img src="images/apple1.png" alt="juicy-shop-apple">
+                    </div>
+                    <h2>Apple</h2>
+                    <p>Apple juice is a source of natural polyphenols that help the body fight against diseases. It is also rich in boron and other nutrients.</p>
+                    <div class="juicy-box juicy-menu-cont">
+                        <a href="#"><img class="menu-juice-box" src="images/red-box.png"><img class="menu-juice-cup" src="images/red-juicy.png" alt="juicy"><span class="know-more2">know More</span></a>
+                    </div>
+                </div>
+                <div class="menu-part-img">
+                    <div class="fruit-img">
+                        <img src="images/orange.png" alt="juicy-shop-orange">
+                    </div>
+                    <h2>Orange</h2>
+                    <p>Orange juice is most common among different types of citrus juices. Major antioxidant and chemopreventive constituents </p>
+                    <div class="juicy-box juicy-menu-cont">
+                        <a href="#"><img class="menu-juice-box" src="images/yellow-box.png"><img class="menu-juice-cup" src="images/yello-juicy.png" alt="juicy"><span class="know-more2">know More</span></a>
+                    </div>
+                </div>
+                <div class="menu-part-img">
+                    <div class="fruit-img">
+                        <img src="images/pomogrant.png" alt="juicy-shop-pomagrant">
+                    </div>
+                    <h2>Pomogrant</h2>
+                    <p>Pomegranate juice may help lower blood pressure and protect the heart and arteries. pomegranate juice could reduce oxidative stress</p>
+                    <div class="juicy-box juicy-menu-cont">
+                        <a href="#"><img class="menu-juice-box" src="images/pink-box.png"><img class="menu-juice-cup" src="images/pink-juicy.png" alt="juicy"><span class="know-more2">know More</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-part">
+                <div class="menu-part-img">
+                    <div class="fruit-img">
+                        <img src="images/mango.png" alt="juicy-shop-mango">
+                    </div>
+                    <h2>Mango</h2>
+                    <p>Mango juice is full of potassium and magnesium, the two compounds that regulate blood pressure in the body.maintain blood pressure.</p>
+                    <div class="juicy-box juicy-menu-cont">
+                        <a href="#"><img class="menu-juice-box" src="images/red-box.png"><img class="menu-juice-cup" src="images/red-juicy.png" alt="juicy"><span class="know-more2">know More</span></a>
+                    </div>
+                </div>
+                <div class="menu-part-img">
+                    <div class="fruit-img">
+                        <img src="images/strawberry.png" alt="juicy-shop-strawberry">
+                    </div>
+                    <h2>Strawberry</h2>
+                    <p>Orange juice is most common among different types of citrus juices. Major antioxidant and chemopreventive constituents </p>
+                    <div class="juicy-box juicy-menu-cont">
+                        <a href="#"><img class="menu-juice-box" src="images/yellow-box.png"><img class="menu-juice-cup" src="images/yello-juicy.png" alt="juicy"><span class="know-more2">know More</span></a>
+                    </div>
+                </div>
+                <div class="menu-part-img">
+                    <div class="fruit-img">
+                        <img src="images/grapes.png" alt="juicy-shop-grapes">
+                    </div>
+                    <h2>Grapes</h2>
+                    <p>Pomegranate juice may help lower blood pressure and protect the heart and arteries. pomegranate juice could reduce oxidative stress</p>
+                    <div class="juicy-box juicy-menu-cont">
+                        <a href="#"><img class="menu-juice-box" src="images/pink-box.png"><img class="menu-juice-cup" src="images/pink-juicy.png" alt="juicy"><span class="know-more2">know More</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var links = document.getElementById("navlinks");
+        function show(){
+            links.style.right = "0px";
+        }
+        function hide(){
+            links.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

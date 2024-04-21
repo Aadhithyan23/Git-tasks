@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link type="image/x-icon" rel="icon" href="images/favicon-32x32.png"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Mojoadz</title>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-58N2HLHJ');
+    </script>
+    <script>
+        $(document).ready(function() {
+            var progressPath = document.querySelector('.progress-wrap path');
+            var pathLength = progressPath.getTotalLength();
+
+            progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+            progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+            progressPath.style.strokeDashoffset = pathLength;
+            progressPath.getBoundingClientRect();
+            progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+
+            var updateProgress = function() {
+                var scroll = $(window).scrollTop();
+                var height = $(document).height() - $(window).height();
+                var progress = pathLength - (scroll * pathLength / height);
+                progressPath.style.strokeDashoffset = progress;
+            }
+
+            updateProgress();
+            $(window).scroll(updateProgress);
+
+            var offset = 50;
+            var duration = 550;
+
+            jQuery(window).on('scroll', function() {
+                if(jQuery(this).scrollTop() > offset) {
+                    jQuery('.progress-wrap').addClass('active-progress');
+                } else {
+                    jQuery('.progress-wrap').removeClass('active-progress');
+                }
+            });
+
+            jQuery('.progress-wrap').on('click', function(event) {
+                event.preventDefault();
+                jQuery('html, body').animate({scrollTop: 0}, duration);
+                return false;
+            })
+        });
+    </script>
+</head>
+<body>
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58N2HLHJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Mojo-Start -->
+    <div class="mojo">
+        <!-- -----------Whatsapp---------------------- -->
+        <div class="whatsapp">
+            <a href="https://wa.me/7272911100" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <!-- Mojo-header-Start -->
+        <div class="mojo-header">
+            <a href="index.html" class="logo-content"><div class="logo-content">
+                <img src="images/mojo-logo.png">
+                <div class="log-name">
+                    <p>Mojo <span>Adz</span></p>
+                </div>
+            </div>
+            </a>
+            <div class="menu" id="navlinks">
+                <ul>
+                    <li class="close" onclick="hide();">
+                        <i class="fa-solid fa-xmark"></i>
+                    </li>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li class="serve-menu">
+                        <a href="#">Services
+                            <ul class="service">
+                                <li><a href="SEO-services.html" target="_blank">SEO Optimisation</a></li>
+                                <li><a href="pay-per-click-services.html" target="_blank">PPC Management</a></li>
+                                <li><a href="social-marketing-services.html" target="_blank">Social Marketing</a></li>
+                                <li><a href="social-media-management.html" target="_blank">Social Media Management</a></li>
+                                <li><a href="email-marketing-services.html" target="_blank">Email Marketing</a></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="career.html">Career</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><button class="getbtn">Get in Touch</button></a>
+                    </li>
+                </ul>
+            </div>
+            <span class="menu-icon" onclick="show();"><i class="fa-solid fa-bars"></i></span>
+        </div>
+        <!-- Mojo-Header-End -->
+        <!-- Mojo-content-start -->
+        <div class="mojo-content">
+            <div class="mojo-left">
+                <div class="mojo-part">
+                    <div class="growth">
+                        <p>Your Digital Growth</p>
+                        <p>is our <span id="text"></span>.</p>
+                    </div>
+                    <div class="customer">
+                        <p>We Turn <span class="cl3">CLICKS</span></p>
+                        <p>into <span class="cl3">CUSTOMERS</span></p>
+                    </div>
+                    <div class="strategy">
+                        <p>We're not just a digital marketing company;</p>
+                        <p>we're the architects of your online success story,</p>
+                        <p>crafting every pixel and pixel-perfect strategy</p>
+                        <p>with passion and precision</p>
+                    </div>
+                    <div class="result">
+                        <a href="projects.html"><button class="arrow">See Winning Results <img src="images/arrow.png"></button></a>
+                        <button class="video"><img src="images/button-request demo.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+            <div class="mojo-right">
+                <div class="group-img">
+                    <img src="images/group1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Mojo-content-End -->
+        <!-- Mojo-About-Start -->
+        <div class="mojo-about">
+            <div class="about-head">
+                <h2>ABOUT US</h2>
+                <p>We Deliver High-impact services to take your business to the next level</p>
+            </div>
+            <div class="about-content">
+                <div class="about-left">
+                    <img src="images/phone2.png" alt="phone">
+                </div>
+                <div class="about-right">
+                    <div class="abt-part1">
+                        <div class="about-box">
+                            <div class="abt-img">
+                                <img src="images/016. Marketing Plan.png">
+                                <span>SEO Optimization</span>
+                            </div>
+                            <div class="abt-cn">
+                                <p>Sometimes features require a short description</p>
+                                <a href="SEO-services.html">Know More</a>
+                            </div>
+                        </div>
+                        <div class="about-box">
+                            <div class="abt-img">
+                                <img src="images/025. Statistics.png">
+                                <span>Paid Ads</span>
+                            </div>
+                            <div class="abt-cn">
+                                <p>Sometimes features require a short description</p>
+                                <a href="social-marketing-services.html">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="abt-part2">
+                        <div class="about-box">
+                            <div class="abt-img">
+                                <img src="images/023. Startup.png">
+                                <span>Email Marketing</span>
+                            </div>
+                            <div class="abt-cn">
+                                <p>Sometimes features require a short description</p>
+                                <a href="email-marketing-services.html">Know More</a>
+                            </div>
+                        </div>
+                        <div class="about-box">
+                            <div class="abt-img">
+                                <img src="images/017. Megaphone.png">
+                                <span>PPC Management</span>
+                            </div>
+                            <div class="abt-cn">
+                                <p>Sometimes features require a short description</p>
+                                <a href="pay-per-click-services.html">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mojo-About-End -->
+        <div class="mojo-benefit">
+            <div class="benefit-head">
+                <h2>BENEFIT OF WORKING WITH <br>MOJO ADZ</h2>
+            </div>
+            <div class="benefit-content">
+                <div class="benefit-img">
+                    <img src="images/computer.png">
+                </div>
+                <div class="benefit-details">
+                    <div class="benefit-part">
+                        <div class="ben-img">
+                            <img src="images/benefit1.png">
+                        </div>
+                        <div class="benefit">
+                            <p>Page Rankings</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        </div>
+                    </div>
+                    <div class="benefit-part">
+                        <div class="ben-img">
+                            <img src="images/benefit2.png">
+                        </div>
+                        <div class="benefit">
+                            <p>Site Optimisation</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        </div>
+                    </div>
+                    <div class="benefit-part">
+                        <div class="ben-img">
+                            <img src="images/benefit3.png">
+                        </div>
+                        <div class="benefit">
+                            <p>Reporting & Analysis</p>
+                            <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mojo-Testimonials-Start -->
+        <div class="mojo-testimonials">
+            <div class="testimon-head about-head">
+                <h2>TESTIMONIALS</h2>
+                <span>We work with customers <br>across all industries</span>
+            </div>
+            <div class="testimon-content">
+                <div class="testimon-box">
+                    <span></span>
+                    <div class="animate-box">
+                    <div class="company">
+                        <div class="com-name">
+                            <img src="images/Company1.png">
+                            <img src="images/Star.png">
+                        </div>
+                        <div class="com-details">
+                            <p>Lorem Ipsum has been the industry's standard from dummy text ever since the unknown printer to galley of type and make a type specimen book. </p>
+                        </div>
+                    </div>
+                    <div class="owner">
+                        <div class="owner-img">
+                            <img src="images/owner1.png">
+                        </div>
+                        <div class="owner-name">
+                            <p>John Carter</p>
+                            <p>Marketing Lead at Google</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="testimon-box">
+                    <span></span>
+                    <div class="animate-box">
+                        <div class="company">
+                            <div class="com-name">
+                                <img src="images/Company 2.png">
+                                <img src="images/Star.png">
+                            </div>
+                            <div class="com-details">
+                                <p>Lorem Ipsum has been the industry's standard from dummy text ever since the unknown printer to galley of type and make an book. </p>
+                            </div>
+                        </div>
+                        <div class="owner">
+                            <div class="owner-img">
+                                <img src="images/owner2.png">
+                            </div>
+                            <div class="owner-name">
+                                <p>Peeter pawl</p>
+                                <p>Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mojo-Testimonials-End -->
+        <!-- Mojo-contact-Start -->
+        <div class="mojo-contact">
+            <div class="contact-part">
+                <div class="project">
+                    <p>Have a Project?</p>
+                    <p>Lets Collaborate!</p>
+                </div>
+                <div class="project-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst habitant viverra placerat volutpat adipi urna risus, a turpis. Orci, aliquam in id etiam praesent scelerisque leo Nec blandit tellus</p>
+                </div>
+                <div>
+                    <button class="getbtn"><i class="fa-solid fa-phone" style="padding-right: 10px;"></i>Contact Us</button>
+                </div>
+            </div>
+        </div>
+        <!-- Mojo-contact-End -->
+        <!-- Mojo-Footer-Start -->
+        <div class="mojo-footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <a href="index.html" class="logo-content"><div class="logo-content flogo">
+                <img src="images/mojo-logo.png">
+                <div class="log-name log">
+                    <p>Mojo <br><span style="color: white;">Adz</span></p>
+                </div>
+            </div></a>
+            <div class="mojo-info">
+                <h3>Information</h3>
+                <ul>
+                    <li>
+                        <a href="#">Achievements</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#">Certifications</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mojo-fc">
+                <h3>More Details</h3>
+                <div class="adrs">
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <span>No 419, 1st Floor, LIG Colony Rd, New LIG Colony, Anna Nagar, Madurai, Tamil Nadu 625020</span>
+                </div>
+                <div class="adrs">
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    <span>(+91)7272911100</span>
+                </div>
+                <div class="adrs">
+                    <span><i class="fa-solid fa-square-envelope"></i></span>
+                    <span>info@redotsolutions.com</span>
+                </div>
+            </div>
+            <div class="mojo-social">
+                <h3>Social Media</h3>
+                <div class="media-icons">
+                    <span class="insta"><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                    <span class="twitter"><a href="#"><i class="fa-brands fa-x-twitter"></i></a></span>
+                    <span class="linkedin"><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></span>
+                    <span class="facebook"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
+                    <span class="youtube"><a href="#"><i class="fa-brands fa-youtube"></i></a></span>
+                </div>
+                <div class="our-brands">
+                    <h3>Our Brands</h3>
+                    <a href="https://redotsolutions.com/">Redot Solutions</a>
+                    <a href="https://redotacademy.com/">Redot academy</a>
+                    <a href="#">Redot consultancy</a>
+                    <a href="https://infiniticz.com/">Infiniticz</a>
+                </div>
+            </div>
+        </div>
+        <!-- Mojo-Footer-End -->
+    </div> 
+    <!-- Mojo-End -->
+    <!-- <script>
+        ScrollReveal({ 
+            // reset: true,
+            distance :'60px',
+            duration:2500,
+            delay: 400
+         });
+         ScrollReveal().reveal('.customer,.strategy', { delay: 100, origin:'left' });
+         ScrollReveal().reveal('.about-head', { delay: 200, origin:'top' });
+         ScrollReveal().reveal('.about-left', { delay: 300, origin:'left' });
+         ScrollReveal().reveal('.about-right', { delay: 400, origin:'right' });
+         ScrollReveal().reveal('.benefit-head', { delay: 300, origin:'top' });
+         ScrollReveal().reveal('.benefit-img,.benefit-details', { delay: 400, origin:'bottom' });
+         ScrollReveal().reveal('.project', { delay: 100, origin:'top' });
+         ScrollReveal().reveal('.project-content', { delay: 300, origin:'right' });
+    </script> -->
+    <script>
+        var links = document.getElementById("navlinks");
+        function show(){
+            links.style.right = "0px";
+        }
+        function hide(){
+            links.style.right = "-200px";
+        }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        let typingText = new Typed("#text",{
+            strings:[" Success"," achievement"," Glory"],
+            loop:true,
+            typeSpeed:100,
+            backSpeed:50,
+            backDelay:1000
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Island+Moments&family=Italianno&family=Khand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jomolhari&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Jost:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: black;
+}
+
+.juicy-container {
+    width: 100%;
+}
+
+/* ------------------------------ Juicy-Header---------------------------- */
+.juicy-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5%;
+    color: white;
+    font-family: inter;
+}
+
+.juicy-logo {
+    font-weight: 600;
+    font-size: 21px;
+}
+.juicy-logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+    color: white;
+}
+.juicy-logo a img {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 0 20px;
+}
+
+.menu li {
+    list-style: none;
+    width: 100px;
+    text-align: center;
+}
+
+.menu li a {
+    color: white;
+    font-size: 18px;
+}
+
+.menu li a:hover {
+    color: #FF9D0A;
+}
+
+/* -------------------------------Juicy-home-banner-------------------------- */
+
+.juicy-home {
+    width: 100%;
+    color: white;
+    min-height: 550px;
+    background-image: url(../images/table.png);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    padding: 20px 5% 20px 5%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+.juicy-head {
+    font-family: 'Jomolhari', serif;
+    font-size: 40px;
+    letter-spacing: 5px;
+    background: linear-gradient(#FF9D0A, #FF0000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+.juicy-para {
+    font-family: 'Kanit', sans-serif;
+    width: 30%;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+}
+.home-fruit {
+    width: 70%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.home-fruit img {
+    width: 100%;
+}
+
+/* -----------------------------Juicy-About-Banner--------------------------- */
+
+.juicy-about {
+    width: 100%;
+    display: flex;
+    min-height: 450px;
+    padding: 0 0 20px 5%;
+    font-family: 'Kanit', sans-serif;
+}
+.juicy-abt-para {
+    width: 35%;
+    color: white;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 300;
+    padding: 3% 0;
+}
+.juicy-abt-para p {
+    margin-top: 20%;
+}
+.juicy-box {
+    width: 100%;
+    position: relative;
+}
+.yellow-box {
+    position: absolute;
+    left: 2.5%;
+    bottom: 8%;
+}
+.know-more {
+    width: 100%;
+    position: relative;
+    top: -18%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+.about-fruit {
+    width: 65%;
+}
+.about-fruit img {
+    width: 100%;
+}
+
+/* ------------------------Juicy-Menu--------------------------------- */
+.juicy-menu-part {
+    width: 100%;
+    padding: 30px 4%;
+}
+.menu-part {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    overflow: hidden;
+}
+.menu-part-img {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 15px 0;
+}
+.menu-part-img p {
+    width: 100%;
+    padding: 0 10%;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+}
+.menu-part-img h2 {
+    font-family: 'Jomolhari', serif;
+    color: #FF9D0A;
+    letter-spacing: 2px;
+}
+.fruit-img {
+    width: 100%;
+    height: 450px;
+}
+.fruit-img img {
+    width: 100%;
+    height: 100%;
+}
+.menu-juice-box {
+    position: absolute;
+    left: 3%;
+    bottom: 5%;
+}
+.juicy-menu-cont {
+    position: relative;
+    left: 23%;
+}
+.know-more2 {
+    width: 100%;
+    position: relative;
+    top: -20px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+/* --------------------------Juicy-Contact-banner----------------------- */
+.juicy-contact-banner {
+    width: 100%;
+    padding: 20px 0 20px 5%;
+    display: flex;
+    color: white;
+}
+.contact-part {
+    width: 25%;
+    display: flex;
+}
+.contact-part i {
+    color: #FF0000;
+}
+.side-menu {
+    width: 100%;
+    padding: 10% 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+}
+.s-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+.s-menu a {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Kanit', sans-serif;
+}
+.address {
+    padding: 10% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+    font-family: 'Kanit', sans-serif;
+}
+.address p{
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+}
+.address p i {
+    padding-right: 10px;
+}
+
+/* ----------------------------Contact- Form------------------------- */
+.contact-form {
+    width: 45%;
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 4%;
+}
+.c-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px 0;
+    min-height: 500px;
+    border-radius: 5px;
+}
+.c-form h2 {
+    font-family: 'Jomolhari', serif;
+    letter-spacing: 2px;
+    font-size: 35px;
+    color: #FF9D0A;
+}
+.field {
+    width: 90%;
+    display: flex;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-between;
+}
+.field label {
+    width: 30%;
+    color: white;
+}
+.field input {
+    width: 60%;
+    outline: none;
+    height: 40px;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+}
+.sub-btn {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 20px;
+}
+.sub-btn button {
+    padding: 10px 35px;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 3px solid white;
+    cursor: pointer;
+    font-family: 'Kanit', sans-serif;
+    background: transparent;
+    color: white;
+    font-weight: 600;
+}
+/* ------------------------juicy-contact-image------------------------------ */
+.juicy-contact-img {
+    width: 30%;
+    min-height: 600px;
+}
+.juicy-contact-img img {
+    width: 100%;
+    height: 100%;
+}
+/* -----------------------Social-Media------------------------------- */
+.social-media {
+    width: 90%;
+}
+.social-media h2{
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #FF9D0A;
+}
+.media {
+    display: flex;
+    gap: 0 20px;
+    margin-top: 15px;
+    font-size: 25px;
+}
+.media a i {
+    color: #FF0000;
+}
+.menu-icon {
+    display: none;
+}
+.close {
+    display: none;
+}
+@media(max-width:700px){
+    .menu {
+        position:fixed;
+        top: 0;
+        right:-200px;
+        z-index: 14;
+        background: black;
+        width: 200px;
+        min-height: 100vh;
+        transition: .5s;
+        gap: 0;
+    }
+    .close {
+        display: block;
+        color: white;
+        font-size: 25px;
+        position: absolute;
+        top:0;
+        right:0;
+        width: 50px!important;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu li a:hover {
+        color: white;
+    }
+    .menu-icon {
+        display: block;
+        margin-right: 10px;
+    }
+    .menu-icon i {
+        font-size: 20px;
+    }
+    /* ---------------------home-page--------------------------- */
+    .juicy-home {
+        min-height: 650px;
+    }
+    .juicy-para {
+        width: 100%;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+    }
+    /* -------------------------About-Page--------------------------- */
+    .juicy-about {
+        flex-direction: column;
+    }
+    .juicy-abt-para {
+        width: 100%;
+    }
+    .about-fruit {
+        width: 100%;
+    }
+    .know-more {
+        position: relative;
+        bottom: 20px;
+    }
+    /* ----------------------------Menu-Page---------------------------- */
+    .menu-part{
+        flex-direction: column;
+        gap: 25px 0;
+    }
+    .menu-part-img {
+        width: 100%;
+    }
+    .fruit-img {
+        height: 400px;
+    }
+    /* ----------------------------------Contact-page--------------------------- */
+    .juicy-contact-banner {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+    .contact-part{
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    .juicy-contact-img {
+        width: 100%;
+        min-height: 500px;
+    }
+}
+
+@media(max-width:400px){
+    .juicy-menu-cont {
+        position: relative;
+        left: 15%;
+    }
+}

@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Gloria+Hallelujah&family=Itim&family=Jacques+Francois&family=Kanit:wght@400;500;700;800;900&family=Marko+One&family=Martel+Sans&family=Montserrat&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Parisienne&family=Poly&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Puppies+Play&family=Raleway&family=Risque&family=Rosarivo&family=Slabo+13px&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: pecita;
+    src: url(../font/Pecita.otf);
+  }
+.achieve-banner {
+    width: 100%;
+    overflow: hidden;
+}
+.achieve-banner img {
+    width: 100%;
+}
+.gallery {
+    width: 100%;
+    display: flex;
+    min-height: 250px;
+    font-family: 'Kanit', sans-serif;
+    position: relative;
+}
+.left-gal {
+    display: flex;
+    position: absolute;
+    top: -8%;
+    left: 23%;
+    z-index: 10;
+    width: 27%;
+}
+.work-box {
+    width: 100%;
+    height: 130px;
+    background: #f6b2d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+.gallo {
+    position: absolute;
+    right: 12%;
+    top: -40%;
+    width: 40%;
+}
+.right-gal{
+    position: relative;
+    width: 100%;
+    background: white;
+    box-shadow:  0 0 10px #ccc;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: poppins;
+}
+.right-gal::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    background:#ff4f84;
+}
+.gal-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px 0;
+    color: #00214b;
+}
+.gal-box h3{
+    width: 90%;
+    font-weight: 600;
+    font-size: 20px;
+}
+.gal1 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.gal1-left img {
+    width: 70%;
+}
+.gal1-right p:first-child {
+    font-weight: 500;
+}
+.gal1-right p:nth-child(2) {
+    font-size: 14px;
+    color: #41444b;
+}
+
+/* ----------------------------------------Our Achievement-------------------------------- */
+.our-achieve {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:25px 8%;
+    font-family: 'Kanit', sans-serif;
+}
+.ach-part1 {
+    width: 50%;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+.ach-part1 p:nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+    color: #D2153D;
+}
+.ach-part1 h3 {
+    font-family: 'Poly', serif;
+    font-size: 43px;
+    font-weight: 400;
+}
+.ach-part1 p:nth-child(3){
+    font-size: 15px;
+    font-weight: 500;
+    color: #00215B;
+}
+.ach-part1 p:nth-child(4){
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 200;
+    color:#41444B;
+}
+.ach-part2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ach-img {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ach-img img {
+    width: 100%;
+    height: 100%;
+} 
+/* ------------------------------Company Curosal------------------------------ */
+.company {
+    width: 100%;
+    min-height: 250px;
+    background: #FEF2F2;
+    overflow: hidden;
+}
+.comp-slide {
+    display: flex;
+}
+.slide {
+    display: flex;
+    animation: slide 30s linear infinite;
+}
+.comp-slide h3 {
+    width:400px;
+    text-align: center;
+}
+.slide h3:nth-child(1){
+    font-family: pecita;
+    font-size: 37px;
+    margin-top: 10px;
+    color: #5956E8;
+}
+.slide h3:nth-child(2){
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.slide h3:nth-child(3){
+    font-family: 'Parisienne', cursive;
+    font-size: 40px;
+    color: #D40B90;
+}
+.slide h3:nth-child(4){
+    font-family: 'Puppies Play', cursive;
+    font-size: 50px;
+    color: #6E6767;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* ---------------------------------Project Achievements--------------------------- */
+
+.pro-achieve {
+    width: 100%;
+    padding: 20px 8%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kanit', sans-serif;
+    background: linear-gradient(135deg,#77C3D87D,#F4A9D070);
+}
+.pro-head {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.pro-head p {
+    color: #D2153D;
+}
+.pro-head h2 {
+    font-size: 35px;
+    font-weight: 500;
+}
+.comp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+    margin-bottom: 20px;
+    font-family: poppins;
+}
+.comp-box {
+    width: 45%;
+    border: 1px solid;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px 0;
+    padding-bottom: 35px;
+    box-shadow: 0 0 10px #ccc,
+    0 0 20px #ccc;
+}
+.comp-box img {
+    width: 100%;
+}
+.comp-box h4 {
+    font-size: 21px;
+    font-weight: 500;
+    width: 90%;
+}
+.comp-box p {
+    width: 90%;
+    color: #555555;
+    font-size: 15px;
+}
+/* ---------------------------------------Brand Potential---------------------------- */
+.brand {
+    width: 100%;
+    padding: 25px 8%;
+    display: flex;
+}
+.left-brand {
+    width: 50%;
+    font-family: 'Poly', serif;
+}
+.left-brand h3 {
+    font-size: 33px;
+    text-align: center;
+    margin-top: 15px;
+}
+.brand-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand-img img {
+    width: 80%;
+}
+.right-brand {
+    width: 50%;
+    font-family: poppins;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.right-brand p {
+    color: #455A64;
+    font-size: 17px;
+}
+.percentage {
+    width: 100%;
+    display: flex;
+}
+.percent-box {
+    width: 33%;
+    text-align: center;
+}
+.percent-box h2 {
+    color: #FF3672;
+    font-size: 34px;
+}
+.percent-box p{
+    color: #000;
+    font-weight: 600;
+    font-size: 15px;
+}
+@media(max-width:1100px){
+    .left-gal {
+        width: 31%;
+        left: 20%;
+    }
+    .gallery{
+        min-height: 320px;
+    }
+}
+@media(max-width:920px){
+    .ach-part1 h3 {
+        font-size: 35px;
+    }
+    .ach-part1 {
+        gap:10px 0;
+    }
+    .ach-part1 p:nth-child(4){
+        line-height: 23px;
+    }
+    .left-gal {
+        width: 38%;
+        left: 12%;
+    }
+    .right-brand {
+        padding: 0 3%;  
+    }
+    .percent-box h2 {
+        font-size: 30px;
+    }
+}
+@media(max-width:760px){
+    .gallery {
+        flex-direction: column;
+    }
+    .left-gal{
+        left: 0;
+        top: 0;
+        width: 35%;
+        text-align: center;
+    }
+    .gallo {
+        width: 70%;
+        right: 0;
+        top: -16%;
+    }
+    .right-gal {
+        width: 100%;
+    }
+    .our-achieve {
+        flex-direction: column;
+        gap: 15px 0;
+    }
+    .ach-part1,
+    .ach-part2 {
+        width: 90%;
+    }
+    .comp {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .comp-box {
+        width: 100%;
+    }
+    .brand {
+        flex-direction: column;
+        gap: 20px 0px;
+    }
+    .left-brand,
+    .right-brand {
+        width: 100%;
+    }
+    
+}
+@media(max-width:550px){
+    .gallery {
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px 0;
+    }
+    .left-gal{
+       position: static;
+       width: 90%;
+    }
+    .gallo {
+        width: 90%;
+        position: static;
+    }
+    .right-gal {
+        width: 100%;
+        padding: 20px 0;
+    }
+    .gal1-left{
+        width: 25%;
+    }
+    .gal1-left img {
+        width: 100%;
+    }
+    .gal1 {
+        display: flex;
+        gap: 0 10px;
+    }
+    .brand {
+        padding: 25px 2%;
+    }
+    .right-brand {
+        padding: 0 3%;
+        gap: 10px 0;
+    }
+}
